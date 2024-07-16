@@ -132,7 +132,7 @@ cursor: pointer;
 /* section-2 */
 .section-2{
     margin: 50px;
-    height: auto;
+    height:600px;
     width: auto;
     border: 1px solid red;
     margin-top: 50px;
@@ -150,28 +150,329 @@ cursor: pointer;
 }
 .section-2-text{
     width: 500px;
-    height: 450px;
+    height: auto;
     padding: 30px;
     text-align: left;
 }
 .section-2-img{
     width: 540px;
 height: 550px;
-
+display: flex;
+text-align: end;
 }
 .section-2-img img{
     width: 90%;
 height: 90%;
-
-margin: 0 auto;
 margin-top: 20px;
+
 }
 
 @media screen and (max-width:576px) {
     .section-2{
         margin: 0;
-        height: 500px;
+        height:auto;
+        width: auto;
        flex-direction: column;
         justify-content: space-between;
     }
+    .section-2-img {
+        display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    }
 }
+/* section-3 */
+.section-3{
+    margin: 50px;
+    height: auto;
+    width: auto;
+    border: 1px solid red;
+    margin-top: 50px;
+
+}
+.section-3-div1 h2{
+    color: rgb(19, 19, 24);
+font-size: 2.5rem;
+font-weight: 800;
+line-height: 2rem;
+letter-spacing: 0%;
+text-align: center;
+}
+.section-3-div1 p{
+    color: rgba(19, 19, 24, 0.7);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5rem;
+letter-spacing: 0%;
+text-align: center;
+}
+.row-1, .row-2 ,.row-3{
+    display:grid;
+    height: 300%;
+}
+.row-1 img, .row-2 img,.row-3 img{
+    height: 300px;
+    width: auto;
+    gap: 20px;
+    padding: 20px;
+}
+.countycard{
+    position: relative;
+    filter: brightness(80%);
+}
+.countycard p{
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ color: white;
+ font-weight: 600px;
+ font-size: 28px;
+ transform: translate(-50% , 50%);
+}
+.row-1{
+    grid-template-columns: 1fr 1fr;
+}
+.row-2{
+    grid-template-columns: .8fr 1fr .75fr;
+}
+.row-3{
+    grid-template-columns: 1fr 1.25fr;
+}
+@media screen and (max-width:576px){
+    .section-3{
+        margin:0;
+        height: auto;
+        width: auto;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .countycard {
+        height: 300px;
+        width:550px;
+        margin-bottom: 20px;
+    }
+    .countycard img{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .row-1 ,  .row-2 , .row-3{
+        display: flex;
+        flex-direction: column;
+    }
+  
+}
+
+/* section-4 */
+.section-4{
+    margin: 50px;
+    height: auto;
+    width: auto;
+    border: 1px solid red;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+h4{
+    color: rgb(19, 19, 24);
+font-size: 1.6rem;
+font-weight: 800;
+line-height: 1.5rem;
+letter-spacing: 0%;
+text-align: center;
+}
+.card-1{
+    width: 500px;
+    height: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+border: 1px solid rgba(251, 181, 99, 0.2);
+border-radius: 8px;
+background-color: rgba(251, 181, 99, 0.05);
+}
+.card-2{
+    width: 500px;
+    height: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+border: 1px solid rgba(251, 181, 99, 0.2);
+border-radius: 8px;
+background-color: rgba(41, 206, 246, 0.05);
+}
+.card-3{
+    width: 500px;
+    height: 260px;
+    padding: 20px;
+    box-sizing: border-box;
+border: 1px solid rgba(251, 181, 99, 0.2);
+border-radius: 8px;
+background-color: rgba(233, 68, 68, 0.05);
+}
+.card-contaiber-row-1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.card-contaiber-row-2{
+    display: flex;
+    justify-content: center;}
+    @media screen and (max-width:576px){
+        .section-4{
+            margin: 0;
+            height: auto;
+            width: auto;
+            margin-top: 50px;
+            margin: 0 auto;
+         padding: 20px;
+        
+        }
+        .card-1,.card-2,.card-3{
+            margin-bottom: 20px;
+        }
+        .card-contaiber-row-1 , .card-contaiber-row-2{
+         display: flex;
+         flex-direction: column;
+         margin: 0 auto;
+         
+        }
+    }
+    /* section-5 */
+  .section-5{margin: 50px;
+    height: auto;
+    width: auto;
+    border: 1px solid red;
+    margin-top: 50px;
+    padding: 20px;
+}
+    p{
+        color: rgba(19, 19, 24, 0.7);
+font-size: 16px;
+font-weight: 400;
+line-height: 15px;
+text-align: center;
+    }
+    .section-5-div2{
+        height: 500px;
+        width: auto;
+        background-image: url(Images/Group-39.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .li1{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+    .pakage-1{
+        border-radius: 10px;
+backdrop-filter: blur(5px);
+background: rgba(255, 255, 255, 0.4);
+width: 530px;
+height: 250px;
+text-align: center;
+padding: 10px 30px;
+position: absolute;
+top: 10%;
+left: 40%;
+
+    }
+    .section-5-div3{
+        height: 500px;
+        width: auto;
+        background-image: url(Images/Group-39.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 20px;
+    }
+        .pakage-3{
+            border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.4);
+    width: 530px;
+    height: 250px;
+    text-align: center;
+    padding: 10px 30px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+        }
+    .section-5-div4{
+        height: 500px;
+        width: auto;
+        background-image: url(Images/Group-39.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;}
+        .pakage-4{
+            border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.4);
+    width: 530px;
+    height: 250px;
+    text-align: center;
+    padding: 10px 30px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    margin-bottom: 20px;
+
+        }
+        /* responsibe */
+        @media screen and (max-width:576px) {
+              
+            .section-5{margin: 0;
+            }
+                .section-5-div2{
+                  align-items: center;
+                }
+                .btn1{
+                    width: 200px;
+                }
+                .pakage-1, .pakage-3, .pakage-4{
+       text-align: center;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            
+                }
+        }
+        @media screen and (min-width:577px)  and (max-width:1300px){
+            .section-5{margin: 0;
+            }
+                .section-5-div2{
+                  align-items: center;
+                }
+                .btn1{
+                    width: 200px;
+                }
+                .pakage-1,  .pakage-4{
+       text-align: center;
+            width: 400px;
+            height: 300px;
+            text-align: center;
+            padding: 5px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            
+                }
+                .pakage-3{
+                    width: 400px;
+                    height: 300px;
+                    text-align: center;
+                    padding: 5px;
+                    position: absolute;
+                    top: 10%;
+                    left: 35%;
+                }
+        }
