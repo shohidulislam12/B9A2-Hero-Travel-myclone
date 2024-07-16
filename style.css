@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    font-family: "Mulish", sans-serif;
+}
+.section-1{
+    margin: 50px;
+    height: auto;
+    width: auto;
+    border: 1px solid red;
+}
+.div-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-p{
+font-size: 2rem;
+font-weight: 800;
+line-height:2.8rem;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.li{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.li li{
+   margin: 30px;
+    color: rgb(66, 66, 71);
+font-size: 1.5rem;
+font-weight: 400;
+text-align: center;
+}
+/* complete nav sactoon */
+
+.section-1-banner{
+    background-image: linear-gradient(0.00deg, rgba(19, 19, 24, 0),rgba(19, 19, 24, 0.8) 100%), url(Images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:600px;
+    width: 100%;
+}
+.section-1-text h1{
+    color: rgb(255, 255, 255);
+font-size:4rem;
+font-weight: 800;
+line-height:4.5rem;
+letter-spacing: 0%;
+}
+.section-1-text p{
+ color: rgb(255, 255, 255);
+font-size: 1rem;
+font-weight: 400;
+line-height:1.5rem;
+text-align: center;
+}
+.section-1-banner{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.section-1-input{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.section-1-input input,select{
+    border-radius: 6px;
+
+background: rgb(255, 255, 255);
+height: 40px;
+border: none;
+text-align: center;
+cursor: pointer;
+}
+.btn{
+    border-radius: 5px;
+
+background: rgb(255, 84, 0);color: rgb(255, 255, 255);
+font-size: 1rem;
+font-weight: 700;
+line-height:1.5rem;
+text-align: center;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+@media screen and (max-width:576px) {
+    .section-1{
+        margin: 0;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-1-input{
+        flex-direction: column;
+        width: 450px;
+        margin: 0 auto;
+        gap: 20px;
+    
+    }
+    .section-1-input input,select ,button{
+    width:450px;
+    margin: 0 auto;
+    }
+    .li li{
+        margin: 10px;
+    }
+    .li {
+        justify-content: space-between;
+    }
+}
